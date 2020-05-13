@@ -52,7 +52,7 @@ Pappelallee 78/79
 10437 Berlin  
 
 Telefon: +49 176 73034496  
-E-Mail: info@tensorflow.de
+E-Mail: info@reactlernen.de
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 

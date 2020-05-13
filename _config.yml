@@ -23,9 +23,9 @@ email: info@reactlernen.de
 description: >- # this means to ignore newlines until "baseurl:"
   ReactLernen.DE ist die deutschsprachige Community rund um React und React Native. Neben interessanten HowTos und Tutorials bieten wir als Expertennetzwerk und Trainer Schulungen an.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tensorflow.de" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: TensorflowD
-github_username:  tensorflow-de
+url: "https://reactlernen.de" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: reactlernen
+github_username:  reactlernen
 
 # Build settings
 theme: minima
