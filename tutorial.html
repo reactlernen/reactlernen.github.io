@@ -5,36 +5,78 @@ permalink: /tutorial/
 navbar: true
 ---
 
-<!-- <img src="/assets/keras.png" alt="Keras Logo" height="60px"> -->
-<img src="/assets/reactjs.svg" alt="Reactjs Symbolbild" style="margin-bottom: 30px;">
+<img
+  src="/assets/reactjs.svg"
+  alt="Reactjs Symbolbild"
+  style="margin-bottom: 30px;"
+/>
 <p>
-    React ist eine JavaScript Bibliothek zur Entwicklung von Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
+  React ist eine JavaScript Bibliothek zur Entwicklung von
+  Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
 </p>
 <p>
-    React wurde ursprünglich von Jordan Walke, einem Softwareingenieur bei Facebook, entwickelt und 2011 erstmals für Facebooks Newsfeed und später 2012 für Instagram eingesetzt. Im Mai 2013 wurde von Facebook angekündigt, React zukünftig als Open-Source-Projekt weiterführen zu wollen.
+  React wurde ursprünglich von Jordan Walke, einem Softwareingenieur bei
+  Facebook, entwickelt und 2011 erstmals für Facebooks Newsfeed und später 2012
+  für Instagram eingesetzt. Im Mai 2013 wurde von Facebook angekündigt, React
+  zukünftig als Open-Source-Projekt weiterführen zu wollen.
 </p>
+<h2>Lektionen</h2>
+<ol class="tutorial">
+  <li>
+    JavaScript/ ECMAScript
+    <ol class="list-of-contents">
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Was ist JavaScript/ ECMAScript?</a
+        >
+      </li>
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Variablen und Konstanten</a
+        >
+      </li>
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Primitive Datentypen</a
+        >
+      </li>
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Arrays und Iterables</a
+        >
+      </li>
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Objekte und Objektliterale</a
+        >
+      </li>
+      <li>
+        <a class="" href="{{ post.url | relative_url }}"
+          >Funktionen und Funktionen höherer Ordnung</a
+        >
+      </li>
+    </ol>
+  </li>
+</ol>
 {%- if site.tutorial.size > 0 -%}
 <h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
 <ul class="post-list">
-    {%- for post in site.tutorial -%}
-    <li>
+  {%- for post in site.tutorial -%}
+  <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ post.date | date: date_format }}</span>
     <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
+      <a class="post-link" href="{{ post.url | relative_url }}">
         {{ post.lecture }} - {{ post.title | escape }}
-        </a>
+      </a>
     </h3>
-    {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-    {%- endif -%}
-    </li>
-    {%- endfor -%}
-{%- else  -%}
-<p style="font-weight: bold;">
-Nur noch etwas Geduld!<br>
-    
-Hier entsteht ein Tutorial zum Thema React mit Hooks und TypeScript.
-</p>
- {%- endif -%}
+    {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+  </li>
+  {%- endfor -%} {%- else -%}
+  <p style="font-weight: bold;">
+    Nur noch etwas Geduld!<br />
 
+    Hier entsteht ein Tutorial zum Thema React mit Hooks und TypeScript.
+  </p>
+  {%- endif -%}
+</ul>

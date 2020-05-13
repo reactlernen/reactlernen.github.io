@@ -1,0 +1,17 @@
+ol {
+    counter-reset: item;
+    line-height: 1.6em;
+
+    li {
+        display: block;
+
+        &:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+        }
+
+        a {
+            color: darken($brand-color, 10%);
+        }
+    }
+}
