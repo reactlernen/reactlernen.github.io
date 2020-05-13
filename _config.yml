@@ -18,21 +18,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ReactLernen.de
-email: reactlernen@psawicki.de
+title: ReactLernen.DE
+email: info@reactlernen.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  ReactLernen.DE ist die deutschsprachige Community rund um React und React Native. Neben interessanten HowTos und Tutorials bieten wir als Expertennetzwerk und Trainer Schulungen an.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://tensorflow.de" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: TensorflowD
+github_username:  tensorflow-de
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+minima:
+  lang: "de"
+  date_locale: "de"
+  date_format: "%d. %B %Y"
+
+collections:
+  tutorial:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
