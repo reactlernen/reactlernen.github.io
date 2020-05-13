@@ -1,0 +1,45 @@
+---
+layout: page
+title: Tutorial - React mit Hooks und TypeScript
+permalink: /tutorial/
+navbar: true
+---
+
+<!-- <img src="/assets/keras.png" alt="Keras Logo" height="60px"> -->
+<p>
+    Keras ist eine Open Source Deep-Learning-Bibliothek, geschrieben in Python.
+</p>
+<p>
+    Sie wurde von François Chollet initiiert und erstmals am 28. März 2015 <a href="https://keras.io/">veröffentlicht</a>.
+</p>
+<p>
+    Das erklärte Ziel von Keras ist es, eine vereinfachte API für eine Vielzahl von Deep Learning Problemstellungen zu stellen, ohne dass sich der Data Scientist mit den zugrundeliegenden mathematischen Details beschäftigen muss.
+</p>
+<p>
+    Seit dem Release von TensorFlow 1.4 ist Keras Teil der Tensorflow Core API und seit dem Release von TensorFlow 2.0 ist Keras die bevorzugte API.
+</p>
+{%- if site.tutorial.size > 0 -%}
+<h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
+<ul class="post-list">
+    {%- for post in site.tutorial -%}
+    <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.lecture }} - {{ post.title | escape }}
+        </a>
+    </h3>
+    {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+    {%- endif -%}
+    </li>
+    {%- endfor -%}
+{%- else  -%}
+<p style="font-weight: bold;">
+Nur noch etwas Geduld!<br>
+    
+Hier entsteht ein Tutorial zum Thema TensorFlow mit Keras.
+</p>
+ {%- endif -%}
+
