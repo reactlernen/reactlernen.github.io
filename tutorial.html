@@ -20,63 +20,34 @@ navbar: true
   für Instagram eingesetzt. Im Mai 2013 wurde von Facebook angekündigt, React
   zukünftig als Open-Source-Projekt weiterführen zu wollen.
 </p>
-<h2>Lektionen</h2>
-<ol class="tutorial">
-  <li>
-    JavaScript/ ECMAScript
-    <ol class="list-of-contents">
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Was ist JavaScript/ ECMAScript?</a
-        >
-      </li>
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Variablen und Konstanten</a
-        >
-      </li>
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Primitive Datentypen</a
-        >
-      </li>
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Arrays und Iterables</a
-        >
-      </li>
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Objekte und Objektliterale</a
-        >
-      </li>
-      <li>
-        <a class="" href="{{ post.url | relative_url }}"
-          >Funktionen und Funktionen höherer Ordnung</a
-        >
-      </li>
-    </ol>
-  </li>
-</ol>
-{%- if site.tutorial.size > 0 -%}
-<h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
-<ul class="post-list">
-  {%- for post in site.tutorial -%}
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.lecture }} - {{ post.title | escape }}
-      </a>
-    </h3>
-    {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-  </li>
-  {%- endfor -%} {%- else -%}
-  <p style="font-weight: bold;">
-    Nur noch etwas Geduld!<br />
 
-    Hier entsteht ein Tutorial zum Thema React mit Hooks und TypeScript.
-  </p>
-  {%- endif -%}
-</ul>
+<h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
+
+{%- assign lectures = site.tutorial -%}
+{%- assign lecture_numbers = lectures | map: 'lecture' | uniq | sort -%}
+
+<ol class="tutorial">
+
+
+  {%- for lecture_number in lecture_numbers -%}
+    {%- assign sub_lectures = lectures | where: 'lecture', lecture_number -%}
+
+    <li>
+      {%- assign lecture_name = sub_lectures | map: 'lecture_title'| first -%}
+      <span>{{ lecture_name }}</span>
+      <ol> 
+        {%- for lecture in sub_lectures -%}
+        <li>
+          <a class="" href="{{ lecture.url | relative_url }}">
+            {{ lecture.sublecture_title | escape }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ol>
+    </li>
+
+  {%- endfor -%}
+
+  
+  
+</ol>

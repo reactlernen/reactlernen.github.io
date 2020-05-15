@@ -1,4 +1,8 @@
-ol {
+ol.tutorial {
+    font-size: 1.3em;
+}
+
+ol.tutorial, ol.tutorial ol {
     counter-reset: item;
     line-height: 1.6em;
 
