@@ -46,3 +46,7 @@ $on-laptop: 800px !default;
 
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting", "minima/list-of-contents";
+
+figcaption {
+  color: $grey-color;
+}
