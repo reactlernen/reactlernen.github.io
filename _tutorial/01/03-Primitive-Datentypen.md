@@ -4,8 +4,8 @@ layout: tutorial
 lecture: "1"
 lecture_title: "JavaScript und ECMAScript"
 
-sublecture: "2"
-sublecture_title: "Variablen und Konstanten"
+sublecture: "3"
+sublecture_title: "Primitive Datentypen"
 
 date: 2020-05-22
 categories: tutorial update

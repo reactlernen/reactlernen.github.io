@@ -4,7 +4,7 @@ layout: tutorial
 lecture: "1"
 lecture_title: "JavaScript und ECMAScript"
 
-sublecture: "6"
+sublecture: "7"
 sublecture_title: "Einige Worte über die JavaScript Runtime."
 
 date: 2020-05-18

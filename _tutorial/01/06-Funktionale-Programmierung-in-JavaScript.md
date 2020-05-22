@@ -4,7 +4,7 @@ layout: tutorial
 lecture: "1"
 lecture_title: "JavaScript und ECMAScript"
 
-sublecture: "5"
+sublecture: "6"
 sublecture_title: "Funktionale Programmierung in JavaScript"
 
 date: 2020-05-19
