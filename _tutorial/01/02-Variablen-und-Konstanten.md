@@ -77,8 +77,13 @@ Sofern wir zum ersten mal eine Variable oder Konstante kenntlich machen, spreche
 
 1. Hier **deklarieren** und **definieren** wir eine Variable *student* vom Typ **string**. Ein *string* kann belibige Zeichenketten aufnehmen.
 2. An dieser Stelle wird die Variable **klausurnote** vom Typ **number** deklariert und definiert. Eine *number* nimmt beliebiege Zahlen auf. JavaScript unterscheidet hierbei nicht zwischen ganzen Zahlen (natürlichen Zahlen) und Gleitkommazahlen (reelle Zahl)
-
+3. So ähnlich wie im Fall (1) wird hier eine Variable **studienfach** als *string* deklariert und mit dem Wert *Mathematik* definiert.
+4. An dieser Stelle wird eine **Konstante** **deklariert** und mit dem Wert **4** **definiert**. Bei Konstanten ist eine **Deklaration** und zeitgleiche **Definition** notwendig, bei Variablem ist dies nicht erforderlich, wie wir in (5) sehen.
+5. Hier wird eine Variable **bestanden** deklariert, jedoch **nicht definiert**. Eine Variable die nicht definiert ist, hat den speziellen Wert **undefined**, der nicht explizit angegeben werden muss. Der angedachte Typ für die Variable *bestanden* ist **boolean**.
+6. Variablen können über die Zeit neu definiert werden. Hier nimmt die zuvor deklarierte Variable *bestanden* (5) einen neuen Wert an: **true** (zuvor: **undefined**).
+7. Der andere mögliche Wert für Variablen vom Typ *boolean* ist **false**.
+8. Variablen können **ausgelesen** und **ausgewertet** werden um bspw. (wie hier) den Programmablauf zu beinflußen.
 
 <p class="info">
-Es ist Okay wenn Du hier nicht alles verstehst. Versuche Dich hier auf das Wesentliche zu konzentrieren: Die Variablen und Konstanten.
+Es ist Okay wenn Du hier nicht alles verstehst. Versuche Dich hier auf das Wesentliche zu konzentrieren: Die Deklaration und Definition von Variablen und Konstanten.
 </p>
