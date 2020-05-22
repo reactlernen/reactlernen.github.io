@@ -4,7 +4,7 @@ layout: tutorial
 lecture: "1"
 lecture_title: "JavaScript und ECMAScript"
 
-sublecture: "2"
+sublecture: "6"
 sublecture_title: "Einige Worte über die JavaScript Runtime."
 
 date: 2020-05-18
@@ -19,7 +19,7 @@ author: Pawel Sawicki
 </figure>
 
 
-# Ein Gedankenexperiment
+## Ein Gedankenexperiment
 
 Stell Dir mal vor, es ist Feierabend. 
 
@@ -27,11 +27,11 @@ Du möchtest nach Deinem täglichen Treiben nach Hause gehen. Du kommst jedoch a
 
 Du gehst in den Supermarkt Deiner Wahl.
 
-Dort findest Du folgende Situation vor: Eine menge Menschen laufen wie wild mit Ihren Körben umher. 
+Dort findest Du folgende Situation vor: Eine menge Menschen laufen wie wild mit Ihren Einkaufskörben umher. 
 
 > Hilfe! Der Supermarkt ist überlaufen.
 
-Aber es soll noch schlimmer kommen. Du gehst mit deinen mühevoll zusammengestellten Einkäufen Richtung Kasse. 
+Aber es soll noch schlimmer kommen. Du gehst mit Deinem mühevoll zusammengestellten Einkäufen in Richtung der Kasse. 
 
 > Oh, nein! Nur eine Kasse ist offen.
 
@@ -45,7 +45,7 @@ Wie das Pech so will:
 Ein erschreckendes Szenario, nicht wahr? Doch was hat das alles mit JavaScript zu tun?
 Nun, eine ganze Menge, wie wir gleich sehen werden.
 
-# Ein Blick auf die JavaScript Runtime
+## Ein Blick auf die JavaScript Runtime
 
 Das Szenario, wie oben beschrieben, lässt sich wunderbar auf JavaScript übertragen:
 
@@ -57,7 +57,7 @@ Die einzige offene Kasse steht sinnbildlich für diesen Thread der in der Lage d
 
 Man mag sich an dieser Stelle fragen:
 
-> Was heißt das ein Event abzuarbeiten?
+> Was heißt es ein Event abzuarbeiten?
 
 Nun, im oben genannten Szenario ist das recht einfach: Jeder Einkäufer hat einen Warenkorb und der Kassierer muss die Waren aus dem Korb kassieren.
 
@@ -78,3 +78,15 @@ Tbd
   <img src="{{site.url}}/assets/js-runtime.png" alt="Ein Modell der JavaScript Runtime."/>
   <figcaption>Ein Modell der JavaScript Runtime.</figcaption>
 </figure>
+
+## Übung
+
+tbd
+
+<iframe
+     src="https://codesandbox.io/embed/heuristic-gould-xe5z2?fontsize=14&hidenavigation=1&view=editor"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="heuristic-gould-xe5z2"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>

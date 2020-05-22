@@ -30,7 +30,7 @@ navbar: true
 
 
   {%- for lecture_number in lecture_numbers -%}
-    {%- assign sub_lectures = lectures | where: 'lecture', lecture_number -%}
+    {%- assign sub_lectures = lectures | where: 'lecture', lecture_number  | sort: 'sublecture'-%}
 
     <li>
       {%- assign lecture_name = sub_lectures | map: 'lecture_title'| first -%}
