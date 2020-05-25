@@ -21,7 +21,7 @@ Nun, vermutlich ist Dir die Idee von **Variablen** und **Konstanten** bekannt. F
 
 Fangen wir mit einem kleinen Beispiel an:
 <p class="example">
-Der <span class="emph">Student</span> hat das <span class="emph">Studienfach</span> bestanden, wenn seine <span class="emph">Klausurnote</span> besser oder gleich einer <span class="emph">Schwelle = 4</span> ist.
+Der <em>Student</em> hat das <em>Studienfach</em> bestanden, wenn seine <em>Klausurnote</em> besser oder gleich einer <em>Schwelle = 4</em> ist.
 </p>
 
 Offensichtlich handelt es sich bei dem obigen Satz um eine Aussage. Die Aussage ist allgemein gehalten.
@@ -38,13 +38,13 @@ In Deutschland sind die Zahlen **1**, **2**, **3**, **4**, **5** oder **6** gül
 Man könnte sagen, dass **Student**, **Studienfach** und **Klausurnote** als Platzhalter, also sogenannte **Variablen**, zu verstehen sind. 
 
 <p class="definition">
-Der <span class="emph">Datentyp</span> einer <span class="emph">Variable</span> sagt aus, welche Werte für diese Variable möglich sind.
+Der <em>Datentyp</em> einer <em>Variable</em> sagt aus, welche Werte für diese Variable möglich sind.
 </p>
 
 In unserem Beispiel ist die Note **4** eine **Konstante**, unabhängig der Werte für die Variablen *Student*, *Studienfach* und *Klausurnote*. Damit wir auch wissen, was mit dem Wert *4* eigentlich gemeint ist, vergeben wir dieser Konstante einen Bezeichner, der beliebig, allerdings aussagekräftig ist: **Schwelle**.
 
 <p class="definition">
-Eine <span class="emph">Konstante</span> ist ein <span class="emph">Wert</span> identifiziert durch seinen <span class="emph">Bezeichner</span> Der Bezeichner behält seinen Wert stets bei.
+Eine <em>Konstante</em> ist ein <em>Wert</em> identifiziert durch seinen <em>Bezeichner</em> Der Bezeichner behält seinen Wert stets bei.
 </p>
 
 ## Variablen und Konstanten in JavaScript
@@ -72,7 +72,7 @@ if (bestanden) {                // (8) Die Variable wird ausgewertet.
 ```
 
 <p class="definition">
-Sofern wir zum ersten mal eine Variable oder Konstante kenntlich machen, sprechen wir von einer <span class="emph">Deklaration</span>. Sobald wir der Variable oder der Konstante einen Wert zuweisen, sprechen wir von einer <span class="emph">Definition</span>.
+Sofern wir zum ersten mal eine Variable oder Konstante kenntlich machen, sprechen wir von einer <em>Deklaration</em>. Sobald wir der Variable oder der Konstante einen Wert zuweisen, sprechen wir von einer <em>Definition</em>.
 </p>
 
 1. Hier **deklarieren** und **definieren** wir eine Variable *student* vom Typ **string**. Ein *string* kann belibige Zeichenketten aufnehmen.

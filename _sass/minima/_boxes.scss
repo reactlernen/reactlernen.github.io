@@ -8,14 +8,14 @@
 
     padding: 0.5rem 0.7rem;
 
-    .emph {
+    em {
         font-weight: 600;
         font-style: italic;
     }
 
     &::before {
-        content: 'Beispiel \270c';
-        display: block;
+        content: 'Beispiel \1F44D';
+        display: table;
         font-size: 0.8rem;
         border: 1px solid silver;
         color: darken($color: silver, $amount: 37%);
@@ -26,7 +26,7 @@
         position: relative;
         top: calc(-0.5rem - 1px);
         left: calc(-0.7rem - 1px);
-        width: 4.5rem;
+        // width: 4.5rem;
     }
 
 }
@@ -41,14 +41,15 @@
 
     padding: 0.5rem 0.7rem;
 
-    .emph {
+    em {
         font-weight: 600;
         font-style: italic;
     }
 
     &::before {
         content: 'Hinweis \1f4a1';
-        display: block;
+        display: table;
+        clear: both;
         font-size: 0.8rem;
         border: 1px solid #f7af2b;
         color: darken($color: #f7af2b, $amount: 37%);
@@ -59,7 +60,7 @@
         position: relative;
         top: calc(-0.5rem - 1px);
         left: calc(-0.7rem - 1px);
-        width: 4.2rem;
+        //width: 4.2rem;
     }
 }
 
@@ -73,14 +74,15 @@
 
     padding: 0.5rem 0.7rem;
 
-    .emph {
+    em {
         font-weight: 600;
         font-style: italic;
     }
 
     &::before {
         content: 'Definition \1F4D6';
-        display: block;
+        display: table;
+        clear: both;
         font-size: 0.8rem;
         border: 1px solid #91e06c;
         color: darken($color: #91e06c, $amount: 37%);
@@ -91,7 +93,7 @@
         position: relative;
         top: calc(-0.5rem - 1px);
         left: calc(-0.7rem - 1px);
-        width: 5rem;
+        // width: 5rem;
     }
 }
 
