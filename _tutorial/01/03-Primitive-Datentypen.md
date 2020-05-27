@@ -93,45 +93,90 @@ In JavaScript fasst man einzelne Buchstaben (allgemeiner: Zeichen) oder deren An
 
 Zeichenketten werden i.d.R. immer dann genutzt, wenn was ausgegeben werden soll.
 
-Gehen wir von unserem Beispiel mit dem Gericht aus:
+Wir haben drei Möglichkeiten *strings* anzugeben:
+
+**Einfache Hochkomma** ```'```
 ```javascript
-const SEATTIGUNG_SEHR_HUGRIG = -1;  // (1) numerische Konstanten
-const SAETTIGUNG_HUNGER = 0;
-const SAETTIGUNG_KANN_MEHR = 1;
-const SAETTIGUNG_SATT = 2;
+const name = 'Max Mustermann'; // Das ist ein string.
+```
+Bei der ersten Variante umschließen wir die Zeichenkette mit ***einfachen Hochkomma*** ```'```. Dies ist die einfachste Art und Weise einen string anzugeben.
 
-let gericht = 'Pizza';              // (2) Das gelieferte Gericht.
+**Doppelte Hochkomma** ```"```
+```javascript
+const frage = "Wie geht's?"; // Das ist ein string
+```
+Hin und wieder kann es sein, dass die Zeichenkette selbst die einfachen Hochkomma enthält, wie in diesem Beispiel. In diesem Fall ist es möglich die Zeichenkette mit ***doppelten Hochkomma*** ```"``` zu umschließen.
 
-let satt = SAETTIGUNG_HUNGER;       // (3) Ich habe Hunger!
+**Template strings** ``` ` ```
+```javascript
+let eineVariable = 'Das ist ein Text'; // Das ist ein string
 
-if (gericht === 'Pizza') {          // (4) strings können verglichen werden.
-    satt = SAETTIGUNG_SATT;
-} else if (gericht === 'Burger' || gericht === 'Fischbrötchen') {
-    satt = SAETTIGUNG_KANN_MEHR;
-} else if (gericht === 'Pommes') {
-    satt = SAETTIGUNG_HUNGER;
-} else {
-    satt = SEATTIGUNG_SEHR_HUGRIG;
-}
+// Das ist ein template string mit Zugriff auf den Kontext
+const html = `<p class="mein-absatz">${eineVariable}</p>`;
+```
+Sofern die Zeichenkette selbst kompliziert ist, bspw. selbst Hochkomma enthält oder zusammengesetzt werden muss, kann man den sogenannten ***Template string*** nutzen. Bei den *Template string* wird die Zeichenkette in die sogenannten ***Backticks*** ``` ` ``` umschloßen. Innerhalb der Zeichenkette selbst, kann man auf den Kontext mittels ```${kontext}```zugreifen, bspw. auf Variablen.
 
-let freude;
-if (satt === SAETTIGUNG_SATT) {
-    freude = 'Lecker ' + gericht + '. Ich bin satt.'; // (5) string Verkettung
-} else if (satt === SAETTIGUNG_KANN_MEHR) {
-    freude = "Mmm " + gericht + ". Ich könnt's immer essen."; // (6) string Verkettung
-} else if (satt === SAETTIGUNG_HUNGER) {
-    freude = `Mmm ${gericht}. Was für kleine Portion.`; // (7) template string
-} else {
-    freude = `Oh, nein! Was ist ${gericht}?. Das esse ich nicht.`;
-}
+#### Operationen auf strings
 
-console.log(freude); // Ausgabe: Lecker Pizza. Ich bin satt.
+Du kannst einfach strings aus anderen strings zusammensetzen, indem Du diese mit dem ```+``` Operator verkettest (Konkatenation).
+
+<p class="definition">
+Das Verketten mehrerer strings zu einem resultierenden string nennt man <em>Konkatenation</em>.
+</p>
+
+Beispiel:
+
+```javascript
+const vorname = 'Lisa';
+const nachname = 'Musterfrau';
+
+const name = vorname + ' ' + nachname;
 ```
 
-1. Hier sehen wir einige Konstanten vom Datentyp ***number***, die dazu genutzt werden unser Sättigungsgefühl zu kodieren.
-2. Die Deklaration der Variable ***gericht*** vom Datentyp ***string***. Initial nimmt die Variable den Wert ```'Pizza'``` an. Beachte hier die umschließenden ***einfachen Hochkomma***: ```'```
-3. Hier wird die numerische Variable ***satt*** deklariert und definiert. 
-4. Ein *string* kann mit einem anderen *string* verglichen werden. Hierzu nutzt man den ```===``` Vergleichsoperator.
-5. Mehrere *strings* können zu einem resultierenden *string* ***verkettet*** werden. Hierzu nutzt man den ```+``` Operator.
-6. *strings* können alternativ auch mit ***doppelten Hochkomma*** ```"``` umschloßen werden. Dies ist dann sinnvoll, wenn der *string* einfache Hochkomma beinhaltet.
-7. Anstatt *strings* zu verketten, kann man den *string* auch mit sogenannten ***backticks*** ``` ` ``` umschließen um auf den Kontext zuzugreifen: `${eineVariable}`.
+Hin und wieder ist es jedoch einfacher auf den Template string zurückzugreifen:
+
+```javascript
+const frage = `Du heißt ${name}, nicht wahr?!`;
+```
+
+Es ist auch denkbar, Werte eines anderen Datentypen mit einem string zu konkatenieren.
+
+```javascript
+const aussage = 'Ich bin ' + 99 + ' Jahre alt.';
+```
+
+Sofern man herausfinden möchte, wieviele Zeichen ein string enthält, kann man auf die ***Eigentschaft*** ***length*** eines strings zugreifen:
+
+```javascript
+console.log(`Die Aussage hat ${aussage.length} Zeichen.`);
+    // Ausgabe: Die Aussage hat 21 Zeichen.
+```
+
+<p class="info">
+Auch der <em>leere string</em> <code>''</code> ist ein string. Seine Länge ist <em>0</em>.
+</p>
+
+### Wahrheitsaussagen mit der Booleschen Logik &#x2192; boolean
+
+In JavaScript, wie auch in den meisten anderen Programmiersprachen, wird der Programmablauf maßgeblich von sogenannten ***Wahrheitsaussagen*** beinflusst. Eine Wahrheitsaussage kann entweder ***wahr*** ```true``` oder ***falsch*** ```false``` sein.
+
+<p class="example">
+Max möchte mit seinem Auto nach <em>Rom</em> fahren.
+<br>
+Er steht an einer <em>Wegabzweigung</em> und weiß nicht wohin er fahren soll, <em>nach links</em> oder <em>nach rechts</em>.<br>
+Er fragt einen Passanten nach dem Weg. Der Passant antwortet: 
+<br>
+<em>"Sofern sie nach Rom möchten, fahren sie nach links. Sofern sie nach Paris möchten, fahren sie nach rechts."</em>
+<br>
+Max fährt nach links.
+</p>
+
+<p class="definition">
+Der Datentyp <em>boolean</em> hat nur zwei mögliche Werte: <em>true</em> oder <em>false</em>.<br>
+</p>
+
+<p class="definition">
+Die <em>Boolesche Logik</em> basiert auf dem Datentypen <em>boolean</em> unter Anwendung von <em>booleschen Operatoren</em>.<br><br>
+
+Die möglichen Operationen sind <em>a und b</em> <code>a && b</code>, <em>a oder b</em> <code>a || b</code>, <em>nicht a</em> <code>!a</code>, <em>a gleich b</em> <code>a === b</code> und <em>a ungleich b</em> <code>a !== b</code>, wobei <em>a</em> und <em>b</em> vom Datentyp <em>boolean</em> sind.<br>Die Anwendung der booleschen Operationen resultiert wiederum in einem Wert vom Datentyp <em>boolean</em>.
+</p>
