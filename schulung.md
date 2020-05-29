@@ -5,7 +5,7 @@ title: Schulung - React mit TypeScript und Redux
 permalink: /schulung
 navbar: true
 navbar_title: Schulung
-navbar_order: 2
+navbar_order: 3
 
 image_large_url: /assets/training.svg
 image_large_description: Schulung Symbolbild
@@ -24,46 +24,89 @@ author: Pawel Sawicki
 <img
   src="{{ page.image_large_url }}"
   alt="{{ page.image_large_description }}"
-  style="width: 90%; margin-bottom: 30px;"
+  style="width: 100%; margin-bottom: 30px;"
 />
-<p>
-  React ist eine JavaScript Bibliothek zur Entwicklung von
-  Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
-</p>
-<p>
-  React wurde ursprünglich von Jordan Walke, einem Softwareingenieur bei
-  Facebook, entwickelt und 2011 erstmals für Facebooks Newsfeed und später 2012
-  für Instagram eingesetzt. Im Mai 2013 wurde von Facebook angekündigt, React
-  zukünftig als Open-Source-Projekt weiterführen zu wollen.
-</p>
 
-<h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
+## Warum Du React lernen solltest.
 
-{%- assign lectures = site.tutorial -%}
-{%- assign lecture_numbers = lectures | map: 'lecture' | uniq | sort -%}
+React ist eine JavaScript Bibliothek zur Entwicklung von
+Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
 
-<ol class="tutorial">
+Unter der Schirmherrschaft von Facebook entwickelt, kam es innerhalb kürzester Zeit im ganzen Silicon Valley an. Sei es nun *Facebook*, *Instagram*, *Airbnb* oder *Tesla*: **Die ganz Großen setzen auf React**.
 
+Zu den Vorzügen von React zählt: *Geschwindigkeit*, *Stabilität*, *Leichtgewichtigkeit* und ***eine riesiege Community***.
 
-  {%- for lecture_number in lecture_numbers -%}
-    {%- assign sub_lectures = lectures | where: 'lecture', lecture_number  | sort: 'sublecture'-%}
+Heute, trotz dem Aufkommen von Konkurrenten auf dem Markt, hält React nach wie vor Stellung als Platzhirsch unter den JavaScript Bibliotheken und Frameworks - und erfährt mitunter die schnellste Weiterentwicklung.
 
-    <li>
-      {%- assign lecture_name = sub_lectures | map: 'lecture_title'| first -%}
-      <span>{{ lecture_name }}</span>
-      <ol> 
-        {%- for lecture in sub_lectures -%}
-        <li>
-          <a class="" href="{{ lecture.url | relative_url }}">
-            {{ lecture.sublecture_title | escape }}
-          </a>
-        </li>
-        {%- endfor -%}
-      </ol>
-    </li>
+Profitiere auch Du mit Deinem Team, Projekt und Unternehmen. **Setze auch Du auf React**.
 
-  {%- endfor -%}
+## Unsere Schulung
 
-  
-  
-</ol>
+Unsere **dreitägige Schulung** erleichtert Dir und Deinem Team den **Einstieg in React**.
+
+Wir von **ReactLernen.DE** sind fest davon überzeugt, dass eine gute Schulung mindestens folgendes haben muss:
+
+1. Einen starken, **praxiserprobten Entwickler als Dozenten (Trainer)**, der React tagtäglich, in echten Projekten, nutzt.
+2. Einen Dozenten, der **emphatisch und strukturiert** ist. Es ist eine Kunst, das umfangreiche Wissen **didaktisch wertvoll** zu **vermitteln**.
+3. **Starkes Schulungsmaterial**, das mit jeder Schulung immer besser wird: *didaktisch und praktisch*.
+4. Ein **Hands-on Ansatz**, bei dem theoretisches Wissen sofort anhand **praktischer Übungen** durch die Teilnehmer ausprobiert werden kann.
+5. Einen Dozenten, als Partner, der auf **Eure individuellen Fragestellungen** eingehen kann und Euch **über die Schulung hinaus in Euren Projekten begleitet**. 
+
+## Die Agenda
+
+Unsere React Schulung geht über **3 Tage**.
+
+### Tag 1
+
+Grundlagen von **Typescript** und **ECMAScript**.
+
+- Funktionen und Scopes
+- Typen
+- var / let / const
+- public / private / protected / static
+- Klassen
+- Vererbung
+- Decorators / Annotationen
+- Module
+- Interfaces
+- Funktionale Ansätze
+- Closures
+- Promises (Asynchronität)
+- Destructuring
+
+### Tag 2
+
+**React**, React und noch mehr React.
+
+- Aufsetzen der Beispiel Applikation mit Create React App
+- Einführung in JSX
+- Komponenten
+- Props & States
+- Live Cycle Hooks
+- React Hooks
+- Virtual DOM
+- React Zugriff auf eine REST-API
+- Routing mit dem React Router
+
+### Tag 3
+
+**React** Meister werden.
+
+- CSS in JS
+- Formulare und Validierung
+- Server Side Rendering (SSR) mit Next.js
+- Redux
+- Testing
+
+### Nach der Schulung
+
+- Individuelle Betreuung dur den Dozenten
+
+### Interessiert?
+
+Du hast Fragen zu unserer Schulung oder möchtest gerne Eine Schulung buchen?
+
+Nimm jederzeit gerne Kontakt zu uns auf. Die Kontaktaufnahme ist **für Dich unverbindlich**.
+
+E-Mail: [info@reactlernen.de](mailto:info@reactlernen.de?subject=React%20Schulung&body=Hallo%20Pawel!%0a%0a...)
+

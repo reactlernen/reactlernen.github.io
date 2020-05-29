@@ -11,7 +11,7 @@ layout: default
 
   {%- assign default_paths = site.pages | where: "navbar", true | sort: "navbar_order" | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <h2 class="post-list-heading" style="position: relative; top: -20px;">React für angehende Superhelden</h2>
+    <h2 class="post-list-heading" style="position: relative; top: -20px;">React für angehende Webentwickler</h2>
     <div class="main-actions" style="position: relative; top: -20px;">
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
