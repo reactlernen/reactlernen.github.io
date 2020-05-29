@@ -155,21 +155,12 @@ console.log(`Die Aussage hat ${aussage.length} Zeichen.`);
 <p class="info">
 Auch der <em>leere string</em> <code>''</code> ist ein string. Seine Länge ist <em>0</em>.
 </p>
+<!-- <iframe width="720" height="500" src="https://www.youtube.com/embed/eczbkWAGRic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ### Wahrheitsaussagen mit der Booleschen Logik &#x2192; boolean
 
 In JavaScript, wie auch in den meisten anderen Programmiersprachen, wird der Programmablauf maßgeblich von sogenannten ***Wahrheitsaussagen*** beinflusst. Eine Wahrheitsaussage kann entweder ***wahr*** ```true``` oder ***falsch*** ```false``` sein.
 
-<p class="example">
-Max möchte mit seinem Auto nach <em>Rom</em> fahren.
-<br>
-Er steht an einer <em>Wegabzweigung</em> und weiß nicht wohin er fahren soll, <em>nach links</em> oder <em>nach rechts</em>.<br>
-Er fragt einen Passanten nach dem Weg. Der Passant antwortet: 
-<br>
-<em>"Sofern sie nach Rom möchten, fahren sie nach links. Sofern sie nach Paris möchten, fahren sie nach rechts."</em>
-<br>
-Max fährt nach links.
-</p>
 
 <p class="definition">
 Der Datentyp <em>boolean</em> hat nur zwei mögliche Werte: <em>true</em> oder <em>false</em>.<br>

@@ -1,18 +1,24 @@
 ---
-layout: page
-title: Tutorial - React mit Hooks und TypeScript
-permalink: /tutorial/
+layout: training
+title: Schulung - React mit TypeScript und Redux
+
+permalink: /schulung
 navbar: true
-navbar_title: Tutorial
-navbar_order: 1
+navbar_title: Schulung
+navbar_order: 2
 
-image_large_url: /assets/reactjs.svg
-image_large_description: React JS Symbolbild
+image_large_url: /assets/training.svg
+image_large_description: Schulung Symbolbild
 
-image_small_url: /assets/reactjs.svg
-image_small_description: React JS Symbolbild
+image_small_url: /assets/training.svg
+image_small_description: Schulung Symbolbild
 
-description_short: Lerne React anhand von anschaulichen Beispielen und Übungen.
+description_short: React Schulungen bei Dir im Unternehmen. Von Entwicklern, für Entwickler.
+
+date: 2020-05-29
+categories: schulung update
+
+author: Pawel Sawicki
 ---
 
 <img
