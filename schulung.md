@@ -100,7 +100,7 @@ Grundlagen von **Typescript** und **ECMAScript**.
 
 ### Nach der Schulung
 
-- Individuelle Betreuung dur den Dozenten
+- Individuelle Betreuung durch den Dozenten
 
 ### Interessiert?
 
