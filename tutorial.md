@@ -20,16 +20,22 @@ description_short: Lerne React anhand von anschaulichen Beispielen und Übungen.
   alt="{{ page.image_large_description }}"
   style="width: 100%; margin-bottom: 30px;"
 />
-<p>
-  React ist eine JavaScript Bibliothek zur Entwicklung von
-  Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
-</p>
-<p>
-  React wurde ursprünglich von Jordan Walke, einem Softwareingenieur bei
-  Facebook, entwickelt und 2011 erstmals für Facebooks Newsfeed und später 2012
-  für Instagram eingesetzt. Im Mai 2013 wurde von Facebook angekündigt, React
-  zukünftig als Open-Source-Projekt weiterführen zu wollen.
-</p>
+React ist eine JavaScript Bibliothek zur Entwicklung von
+Web-Benutzeroberflächen, sogenannter Single Page Applications (SPA).
+
+React wurde ursprünglich von Jordan Walke, einem Softwareingenieur bei
+Facebook, entwickelt und 2011 erstmals bei Facebook eingesetzt.
+
+Ab Mai 2013 steht React als Open-Source-Projekt für jedermann zur freien Verwendung. Daher kam es innerhalb kürzester Zeit im ganzen Silicon Valley an. Sei es nun *Facebook*, *Instagram*, *Airbnb* oder *Tesla*: **Die ganz Großen setzen auf React**.
+
+
+Trotz dem Aufkommen vieler JavaScript basierten Bibliotheken und Frameworks zur Entwicklung von Webanwendungen, verteidigt React seine Marktposition als Platzhirsch - und erfährt mitunter die schnellste Weiterentwicklung.
+
+Lass uns zusammen in die wunderbare Welt der *Singe Plage Applications* einsteigen. 
+
+**Setze auch Du auf React**. Lass uns gemeinsam **React lernen**!
+
+
 
 <h2 class="post-list-heading">{{ page.list_title | default: "Lektionen" }}</h2>
 
