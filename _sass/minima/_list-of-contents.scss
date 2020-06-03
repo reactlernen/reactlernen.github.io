@@ -20,3 +20,20 @@ ol.tutorial, ol.tutorial ol {
         }
     }
 }
+
+ul.hooks {
+    font-size: 1.3em;
+    margin-left: 0;
+}
+
+ul.hooks {
+    line-height: 1.6em;
+
+    li {
+        display: block;
+        a {
+            color: darken($brand-color, 10%);
+        }
+    }
+}
+

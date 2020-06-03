@@ -34,15 +34,15 @@ So oder so: Viel Spaß!
 {%- assign weeks = site.hooks -%}
 {%- assign week_numbers = weeks | map: 'week' | uniq | sort -%}
 
-<ol class="tutorial">
+<ul class="hooks">
 
 
   {%- for week_number in week_numbers -%}
     {%- assign week = weeks | where: 'week', week_number  | first -%}
     <li>
 
-      <a class="" href="{{ lecture.url | relative_url }}">
-            {{ week.hook_title | escape }}
+      <a class="" href="{{ week.url | relative_url }}">
+            {{ week.title | escape }}
           </a>
     </li>
 
@@ -50,4 +50,4 @@ So oder so: Viel Spaß!
 
   
   
-</ol>
+</ul>
