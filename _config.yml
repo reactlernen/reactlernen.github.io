@@ -28,8 +28,6 @@ url: https://www.reactlernen.de # the base hostname & protocol for your site, e.
 twitter_username: reactlernen
 github_username: reactlernen
 
-author: Pawel Sawicki
-
 # Build settings
 theme: minima
 plugins:
