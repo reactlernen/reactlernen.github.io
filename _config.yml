@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ReactLernen.DE
+tagline: Die deutschsprachige React Community und Schule.
 email: info@reactlernen.de
 description: >- # this means to ignore newlines until "baseurl:"
   ReactLernen.DE ist die deutschsprachige Community rund um React und React Native. Neben interessanten HowTos und Tutorials bieten wir als Expertennetzwerk und Trainer Schulungen an.
@@ -27,16 +28,22 @@ url: https://www.reactlernen.de # the base hostname & protocol for your site, e.
 twitter_username: reactlernen
 github_username: reactlernen
 
+author:
+  twitter: reactlernen
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 minima:
   lang: "de"
   date_locale: "de"
   date_format: "%d. %B %Y"
+
+lang: de_DE
 
 collections:
   tutorial:

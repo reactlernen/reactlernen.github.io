@@ -7,6 +7,8 @@ navbar: true
 navbar_title: Schulung
 navbar_order: 3
 
+image: /assets/og/schulung.png
+
 image_large_url: /assets/training.svg
 image_large_description: Schulung Symbolbild
 
@@ -19,6 +21,9 @@ date: 2020-05-29
 categories: schulung update
 
 author: Pawel Sawicki
+
+seo:
+  name: React Schulung - React mit TypeScript und Redux
 ---
 
 <img
