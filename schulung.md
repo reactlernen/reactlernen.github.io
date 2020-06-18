@@ -62,47 +62,60 @@ Wir von **ReactLernen.DE** sind fest davon überzeugt, dass eine gute Schulung m
 
 Unsere React Schulung geht über **3 Tage**.
 
-### Tag 1
+<section class="schulung">
+  <h3>Tag 1</h3>
+  <div>
+    <h4>Grundlagen von <em>Typescript</em> und <em>ECMAScript</em>.</h4>
+    <ul>
+      <li>Funktionen und Scopes</li>
+      <li>Typen</li>
+      <li>var / let / const</li>
+      <li>Klassen</li>
+      <li>public / private / protected / static</li>
+      <li>Vererbung</li>
+      <li>Decorators / Annotationen</li>
+      <li>Modules</li>
+      <li>Interfaces</li>
+      <li>Funktionale Ansätze</li>
+      <li>Closures</li>
+      <li>Promises (Asynchronität)</li>
+      <li>Destructuring</li>
+    </ul>
+  </div>
+</section>
 
-Grundlagen von **Typescript** und **ECMAScript**.
+<section class="schulung">
+  <h3>Tag 2</h3>
+  <div>
+    <h4><em>React</em>, React und noch mehr React.</h4>
+    <ul>
+      <li>Aufsetzen der Beispiel Applikation mit <em>create-react-app</em></li>
+      <li>Einführung in <em>JSX</em></li>
+      <li>Komponenten</li>
+      <li>Props & States</li>
+      <li>Live Cycle Hooks</li>
+      <li>React Hooks</li>
+      <li>Virtual DOM</li>
+      <li>React Zugriff auf eine REST-API</li>
+      <li>Routing mit dem React Router</li>
+    </ul>
+  </div>
+</section>
 
-- Funktionen und Scopes
-- Typen
-- var / let / const
-- public / private / protected / static
-- Klassen
-- Vererbung
-- Decorators / Annotationen
-- Module
-- Interfaces
-- Funktionale Ansätze
-- Closures
-- Promises (Asynchronität)
-- Destructuring
+<section class="schulung">
+  <h3>Tag 2</h3>
+  <div>
+    <h4><em>React</em> Meister werden.</h4>
+    <ul>
+      <li>CSS in JS</li>
+      <li>Formulare und Validierung</li>
+      <li>Server Side Rendering (SSR) mit Next.js</li>
+      <li>Redux</li>
+      <li>Testing</li>
+    </ul>
+  </div>
+</section>
 
-### Tag 2
-
-**React**, React und noch mehr React.
-
-- Aufsetzen der Beispiel Applikation mit Create React App
-- Einführung in JSX
-- Komponenten
-- Props & States
-- Live Cycle Hooks
-- React Hooks
-- Virtual DOM
-- React Zugriff auf eine REST-API
-- Routing mit dem React Router
-
-### Tag 3
-
-**React** Meister werden.
-
-- CSS in JS
-- Formulare und Validierung
-- Server Side Rendering (SSR) mit Next.js
-- Redux
-- Testing
 
 ### Nach der Schulung
 
