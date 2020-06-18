@@ -24,8 +24,7 @@ author: Pawel Sawicki
 
 seo:
   name: React Schulung - React mit TypeScript und Redux
-  author:
-    twitter: reactlernen
+  publisher: Pawel Sawicki
 ---
 
 <img
