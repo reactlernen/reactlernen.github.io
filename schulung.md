@@ -87,7 +87,7 @@ Unsere React Schulung geht über **3 Tage**.
 <section class="schulung">
   <h3>Tag 2</h3>
   <div>
-    <h4><em>React</em>, React und noch mehr React.</h4>
+    <h4><em>React</em>, <em>React</em> und noch mehr <em>React</em>.</h4>
     <ul>
       <li>Aufsetzen der Beispiel Applikation mit <em>create-react-app</em></li>
       <li>Einführung in <em>JSX</em></li>

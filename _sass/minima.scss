@@ -69,19 +69,20 @@ section.schulung {
   h3 {
     flex: 1;
     text-align: right;
-    padding: 2rem 2rem 0 0;
+    padding: 1rem 2rem 0 0;
     color: rgb(102, 117, 250);
   }
 
   div {
     flex: 5;
     border-left: 3px solid #828282;
-    padding-top: 2rem;
+    padding-top: 1rem;
 
     h4 {
       position: relative;
       padding-top: 4px;
       padding-left: 5px;
+      font-weight: 600;
 
       &:before {
         content: "";
