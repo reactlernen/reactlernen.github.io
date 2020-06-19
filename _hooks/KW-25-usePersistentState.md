@@ -1,13 +1,20 @@
 ---
 layout: hook
 
-week: "24"
-title: "KW 24 - usePersistentState"
+week: "25"
+title: "KW 25 - usePersistentState"
 
-date: 2020-06-03
+date: 2020-06-19
 categories: hooks update
 
 author: Pawel Sawicki
+
+image: /assets/og/article_2020_06_19.jpg
+
+seo:
+  name: React Hook der Woche - usePersistentState
+  publisher: Pawel Sawicki
+
 ---
 ## Ein Hook wie useState für den persistenten Zustand
 
