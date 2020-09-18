@@ -12,7 +12,7 @@ seo:
   publisher: Pawel Sawicki
 
 ---
-![](/assets/typegraphy.svg)
+![](/assets/typegraphy.jpg)
 
 ## Jede App ist einzigartig.
  
