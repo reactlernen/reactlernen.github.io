@@ -5,7 +5,7 @@ date:   2020-09-18 11:00:00 +0100
 categories: Artikel update
 author: Pawel Sawicki
 
-image: /assets/og/article_2020_06_18.jpg
+image: /assets/og/article_2020_09_18.jpg
 
 seo:
   name: Custom Fonts in React Native
