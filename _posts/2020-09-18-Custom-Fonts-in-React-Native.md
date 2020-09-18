@@ -12,13 +12,13 @@ seo:
   publisher: Pawel Sawicki
 
 ---
-![](/assets/idea.svg)
+![](/assets/typegraphy.svg)
 
-> **Jede App ist einzigartig.**
+## Jede App ist einzigartig.
  
 Deshalb sollte das *Look and Feel* einer App genauso einzigartig wie die App-Idee selbst sein - dazu gehört auch die Wahl einer möglichst passenden ***Font (z. Dt. Schrift)***.
 
-In diesem kurzen Tutorial betrachten wir, wie man eine Font in einem [React Native CLI](https://github.com/react-native-community/cli) und [Expo](https://expo.io) Projekt einbindet und nutzt.
+In diesem kurzen Tutorial betrachten wir, wie man eine Font in einem [React Native CLI](https://github.com/react-native-community/cli) Projekt einbindet und nutzt.
 
 ## Lass uns eine Schrift auswählen.
 
