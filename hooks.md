@@ -42,7 +42,7 @@ So oder so: Viel Spaß!
     <li>
 
       <a class="" href="{{ week.url | relative_url }}">
-            {{ week.title | escape }}
+            {{week.week}} | {{ week.title | escape }}
           </a>
     </li>
 

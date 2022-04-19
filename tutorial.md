@@ -2,7 +2,7 @@
 layout: page
 title: Tutorial - React mit Hooks und TypeScript
 permalink: /tutorial/
-navbar: true
+navbar: false
 navbar_title: Tutorial
 navbar_order: 1
 

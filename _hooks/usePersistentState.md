@@ -1,10 +1,10 @@
 ---
 layout: hook
 
-week: "25"
-title: "KW 25 - usePersistentState"
+week: "2022 - KW 15"
+title: "usePersistentState"
 
-date: 2020-06-19
+date: 2022-04-19
 categories: hooks update
 
 author: Pawel Sawicki
